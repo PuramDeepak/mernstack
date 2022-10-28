@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+    //     function say(){
+    //         console.log('hiii');
+    //     }
+    //     function add(a,b=3){    
+    //         // default b will 3
+    //         console.log(a+b)
+    //     }
+    //     // b is already defaulted so no need to give 
+    // add(20)    
+    // say()
+
+    // function addmany(){
+    //     var s=0
+    //     for(i=0;i<arguments.length;i++){
+    //         s = s+arguments[i];
+    //     }
+    //     return s
+    // }
+    // console.log(addmany(1,2,3,4,5));
+    // function employee(){
+    //     this.name='emp1'
+    //     this.age=20
+    // }    
+    function employee(name,age){
+        this.name=name,
+        this.age=age
+    }  
+
+    let emp1 = new employee('deepak',20);
+    let emp2 = new employee('aakash',19);
+    console.log(emp1,emp2)
+
+
+    </script>
+
+
+</body>
+</html>

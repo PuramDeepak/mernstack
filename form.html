@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border: 2px solid red;
+        }
+        table{
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration form</h1>
+    <form onsubmit="saveData()">
+        <label>First name</label>
+        <input type="text" value="" id="fname"/>
+        <label>Last name</label>
+        <input type="text" value="" id="lname"/>
+        <label>Age</label>
+        <input type="text" value="" id="age"/>
+        <input type="submit" value="save"/>
+
+    </form>
+    <table>
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th>age</th>
+            <!-- <button onclick="saveData()">EDIT</button> -->
+        </tr>
+        <tbody id="maindata">
+
+            
+        </tbody>
+
+    </table>
+    <script>
+        function saveData(){
+            event.preventDefault();  // stops the default function
+            let fname = document.getElementById('fname').value;
+            let lname = document.getElementById('lname').value;
+            let age = document.getElementById('age').value;
+            console.log(fname , lname , age)
+
+            let tabledata = document.getElementById('maindata')
+            tabledata.innerHTML =  tabledata.innerHTML+`
+            <tr>
+                <td>${fname}</td>
+                <td>${lname}</td>
+                <td>${age}</td>
+                </tr>
+                `
+                reset()
+
+            // var b = 56
+            // var a = `hello ${b}`   output : hello56 // toget value we use ``
+            // console.log(a);
+
+            function reset(){
+            let fname = document.getElementById('fname').value=''
+            let lname = document.getElementById('lname').value=''
+            let age = document.getElementById('age').value=''                
+            }
+
+        }
+
+    </script>
+</body>
+</html>

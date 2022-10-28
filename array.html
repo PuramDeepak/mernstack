@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a1=[1,2,3,4,5];
+        console.log(typeof(a1))
+
+        let a2 = new Array(4,9,6,10)
+        console.log(a2)
+        console.log(Array.isArray(a2))
+
+
+        for(let i=0;i<a1.length;i++){
+            console.log(a1[i])
+        }
+
+        // 4 basic methods in arrys
+        // push   push the element at last
+        //pop,    pop the element at last
+        // shift, remove the first element
+        //unshift , add element at first
+        //indexof  return the index
+        let arr = [10,20,30]
+        a1.push('deepak')
+        console.log(a1);
+        a1.pop()
+        console.log(a1);
+        a1.shift();
+        console.log(a1);
+        a1.unshift('hello');
+        console.log(a1);
+        console.log(a1.indexOf(2))
+        
+
+
+
+    </script>
+</body>
+</html>
